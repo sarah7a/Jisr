@@ -1,0 +1,40 @@
+/* Custom Animations */
+.fade-in {
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Base Body settings via CSS to guarantee font is applied everywhere */
+body, input, button, select, textarea {
+    font-family: 'Tajawal', sans-serif !important;
+}
+
+/* Refined Premium Scrollbar Customization */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #aab793a7;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #354F2B;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2E3A23;
+}
